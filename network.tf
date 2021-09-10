@@ -1,5 +1,5 @@
 module "network_gcp" {
-  source         = "git::https://github.com/mentoriaiac/iac-modulo-rede-gcp.git?ref=main"
+  source         = "git::https://github.com/rehzende/iac-modulo-rede-gcp.git?ref=add_route_and_nat_resources"
   project        = local.workspace.project_name
   vpc_name       = local.workspace.vpc_name
   subnetworks    = local.workspace.subnetworks
