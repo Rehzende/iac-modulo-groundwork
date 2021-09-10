@@ -4,4 +4,5 @@ module "network_gcp" {
   vpc_name       = local.workspace.vpc_name
   subnetworks    = local.workspace.subnetworks
   firewall_allow = local.workspace.firewall_allow
+  region         = local.workspace.region
 }
