@@ -22,12 +22,15 @@ jobs:
 
       - name: Terraform Validate
         id: validate
+        working-directory: ./how-to-use-this-module
         run: make terraform-init terraform-validate
 
       - name: Terraform Plan
         id: plan
+        working-directory: ./how-to-use-this-module
         run: make plan
 
       - name: Terraform Test
         id: test
+        working-directory: ./how-to-use-this-module
         run: make test    
